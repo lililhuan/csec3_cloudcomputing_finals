@@ -293,25 +293,26 @@ Render automatically provisions a free TLS certificate for every web service. Al
 
 ```
 [ User's Browser ]
-        |
-        | HTTPS (TLS auto-provisioned)
-        ↓
-[ Render Web Service ]
-  - Runtime: Docker (Python 3.11)
-  - App: HabitFlow (Flet + uvicorn)
-  - Port: 8080
-  - Region: Singapore
-        |
-        | reads/writes
-        ↓
-[ SQLite Database ]
-  - Path: /tmp/habitflow.db
-  - Managed by the application layer
-        
-[ GitHub Repository ] ──── auto-deploy on push ──→ [ Render Web Service ]
+            |
+            | HTTPS (TLS auto-provisioned)
+            ↓
+[ Render Web Service (habitflow-app) ]
+   - Runtime: Docker (Dockerfile → Python 3.11)
+   - App server: uvicorn (asgi:app)
+   - Frontend: Flet
+   - Port: 8080
+   - Region: Oregon (US West)
+            |
+            | reads/writes
+            ↓
+[ SQLite Database (/tmp/habitflow.db) ]
+   - Ephemeral on Render Free tier; switch to persistent disk on paid plans
+   - Stores user accounts, habits, and records
+       
+[ GitHub Repository (main) ] ──── auto-deploy on push ──→ [ Render Web Service ]
 ```
 
-**Public components:** Render Web Service (accessible via HTTPS URL)  
+**Public components:** Render Web Service (public HTTPS URL)
 **Private components:** SQLite database file, environment variables, application logs
 
 ---
