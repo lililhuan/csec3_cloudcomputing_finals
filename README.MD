@@ -10,10 +10,10 @@ HabitFlow is a habit-tracking web application built with Python and Flet. It hel
 - **Justine Aaron Sarcauga** - GitHub: `JustineAaron`
 
 ## Video Link
-- **Project Video**: [link]
+- **Project Video**: [https://youtu.be/WDE7bnXKsxU?si=-hTqo1VyHTXUAkLN](https://youtu.be/WDE7bnXKsxU?si=-hTqo1VyHTXUAkLN)
 
 ## Demo URL
-- **Live Demo**: https://v2-habitflow-app.onrender.com
+- **Live Demo**: [https://v2-habitflow-app.onrender.com](https://v2-habitflow-app.onrender.com)
 
 ## Related Files
 - [Deployment Guide](deployment/README.md)
