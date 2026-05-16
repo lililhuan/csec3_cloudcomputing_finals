@@ -1,12 +1,10 @@
 # Cloud Computing Deliverables
 
 ## Project Overview
-FIXIT (Faculty Issue eXchange and Information Tracker) is a cloud-deployed maintenance reporting system for students, faculty, and staff. The project uses Azure for deployment and supports secure web access, centralized issue tracking, and a streamlined workflow for managing campus concerns.
+HabitFlow is a habit-tracking web application built with Python and Flet. It helps users build consistent daily routines through features like habit management, daily tracking, streak building, progress analytics, and an AI-powered habit categorization system.
 
 ## Team Members
 - **Roinel James A. Llesis** - GitHub: `lililhuan`
-- **Elyssa Olivares** - GitHub:
-- **Francisca Louise Biares** - GitHub: `Francisca1728`
 - **Erica Denese Namia** - GitHub: `ericadenesenamia`
 - **Jeric Romance** - GitHub: `Titojek`
 - **Justine Aaron Sarcauga** - GitHub: `JustineAaron`
